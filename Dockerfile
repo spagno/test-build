@@ -13,4 +13,4 @@ RUN rm /etc/rhsm-host && \
     rm -rf /etc/pki/entitlement
 # OpenShift requires images to run as non-root by default
 USER 1001
-ENTRYPOINT ["/usr/bin/yes"]
+ENTRYPOINT ["while sleep 60; do : ; done"]
